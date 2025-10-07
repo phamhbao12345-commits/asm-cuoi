@@ -200,4 +200,120 @@ font-size: 16px;
 
 .buy-btn i {
   font-size: 14px;
+
+}
+footer {
+    max-width: 100%;
+    /* Chiếm toàn bộ chiều ngang */
+    background-color: #3c3c3c;
+    /* Nền xám đậm */
+    color: white;
+    /* Chữ trắng */
+    text-align: center;
+    /* Căn giữa nội dung */
+    padding: 15px;
+    /* Cách trong 15px */
+    min-height: 50px;
+    /* Chiều cao tối thiểu */
+    clear: both;
+    /* Xóa float để footer không bị dính */
+}
+
+.site-footer {
+    background-color: #3c3c3c;
+    /* Nền xám đậm */
+    color: #ffffff;
+    /* Chữ trắng */
+    padding: 40px 20px 20px;
+    /* Trên 40px, dưới 20px */
+    font-size: 15px;
+    /* Cỡ chữ */
+    margin-top: 40px;
+    /* Cách trên 40px */
+}
+
+.footer-content {
+    display: flex;
+    /* Dùng flexbox để chia cột */
+    flex-wrap: wrap;
+    /* Tự xuống dòng khi không đủ chỗ */
+    justify-content: space-between;
+    /* Các cột cách đều nhau */
+    max-width: 1200px;
+    /* Giới hạn chiều rộng */
+    margin: auto;
+    /* Căn giữa */
+}
+
+.footer-col {
+    flex: 1 1 220px;
+    /* Cột linh hoạt, nhỏ nhất 220px */
+    margin: 10px;
+    /* Cách ngoài 10px */
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+    /* Cách dưới */
+    font-weight: bold;
+    /* Chữ đậm */
+    font-size: 16px;
+    /* Cỡ chữ */
+    color: #C1272D;
+    /* Đỏ đậm */
+}
+
+.footer-text {
+    margin-bottom: 15px;
+    /* Cách dưới */
+    font-weight: bold;
+    /* Chữ đậm */
+    font-size: 16px;
+    /* Cỡ chữ */
+    color: #C1272D;
+    /* Đỏ đậm */
+}
+
+.footer-col p,
+.footer-col li {
+    margin-bottom: 10px;
+    /* Cách dưới */
+    line-height: 1.5;
+    /* Giãn dòng */
+}
+
+.footer-col ul {
+    list-style: none;
+    /* Bỏ dấu chấm danh sách */
+    padding: 0;
+    /* Xóa padding mặc định */
+}
+
+.footer-col ul li a {
+    color: #e0d7ff;
+    /* Màu tím nhạt */
+    text-decoration: none;
+    /* Bỏ gạch chân */
+    transition: 0.2s;
+    /* Hiệu ứng mượt khi hover */
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    /* Chữ trắng */
+    text-decoration: underline;
+    /* Gạch chân khi hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    /* Căn giữa chữ */
+    padding-top: 20px;
+    /* Cách trên */
+    border-top: 1px solid #8e70cc;
+    /* Viền tím ở trên */
+    font-size: 14px;
+    /* Chữ nhỏ */
+    color: #d0c8e8;
+    /* Tím nhạt */
 }
