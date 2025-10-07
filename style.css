@@ -1,0 +1,203 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+/* =================CONTAINER================= */
+.container{
+width: 1014px;
+min-height: 500px;
+margin: 0 auto;
+}
+/* =================HEADER================= */
+header{
+width: 100%;
+min-height: 100px;
+}
+header>img{
+width: 100%;
+margin: Auto;
+}
+/* =================MENU================= */
+nav{
+margin-top: 10px;
+width: 100%;
+min-height: 40px;
+background-color: yellowgreen;
+}
+.menu ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.menu ul>li{
+display: inline-block;
+padding: 0 10px;
+line-height: 40px;
+position: relative;
+}.menu ul>li>a{
+color: white;
+font-weight: bold;
+text-decoration: none;
+padding: 10 20px;
+display: block;
+}.menu ul>li>a:hover{
+color: white;
+background-color: #7FB23D;
+}
+.menu li ul {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background: yellowgreen     ;
+min-width: 220px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+z-index: 1000;
+list-style: none;
+margin: 0;
+padding: 0;
+font-size: 16px;
+}
+
+.menu li ul li a {
+display: block;
+padding: 1px 7px;   /* padding đều 2 bên */
+text-align: left;     /* chữ căn trái */
+font-weight: bold;    /* chữ đậm */
+text-transform: uppercase; /* đổi thành chữ in hoa */
+color: #fff;
+text-decoration: none;
+font-size: 12px;
+}
+
+.menu li ul li {
+border-bottom: 1px solid rgba(255,255,255,0.2);
+}   
+.menu li ul li a:hover {
+background:  #7FB23D;
+color:#fff;
+}
+
+/* Hover cha -> hiện con */
+.menu li:hover ul {
+display: block;
+}.menu li {
+display: inline-block;
+position: relative; /* thêm dòng này */
+padding: 0 10px;
+line-height: 40px;
+}
+/* =================HÌNH BANNER================= */
+.banner{
+width: 100%;
+height: auto;
+background-size: cover;   /* hoặc contain */
+background-position: center;
+overflow: hidden;         /* cắt phần thừa */
+}
+/* ================= KHUNG SẢN PHẨM================= */
+.row{
+width: 100%;
+min-height: 150px;
+display: flex;
+flex-wrap: wrap;  /* xuống dòng khi hết chỗ */
+justify-content: flex-start;    
+
+
+}/* ================= FOOTER================= */
+.footer{
+width: 100%;
+min-height: 100px;
+background-color: blueviolet;
+}/* ================= TITLE================= */
+.title{
+text-align: left;
+font-style: normal;
+color:  #7FB23D;
+}/* ================= SẢN PHẨM================= */
+.col-25 {
+flex: 0 0 25%;      /* mỗi cột chiếm 25% */
+max-width: 25%;     /* không vượt quá 25% */
+padding: 10px;      /* tạo khoảng cách giữa các cột */
+box-sizing: border-box;
+}
+
+.prod {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* sắp xếp từ trên xuống */
+  height: 380px;   /* chỉnh cao hơn chút để đủ chỗ cho button */
+  box-sizing: border-box;
+}
+.prod .image {
+width: 100%;              /* chiếm hết chiều ngang của khung */
+height: 230px;            /* chiều cao cố định */
+object-fit: contain;      /* giữ tỉ lệ gốc, không méo ảnh */
+background: #fff;         /* nền trắng để lấp khoảng trống */
+display: block;
+margin: 0 auto 15px;      /* căn giữa + cách dưới */
+}
+
+.prod .name {
+font-size: 16px;
+font-weight: bold;
+color: #000;
+margin-bottom: 8px;
+line-height: 1.4;
+text-transform: uppercase;
+
+display: -webkit-box;
+-webkit-line-clamp: 2;       /* số dòng muốn hiển thị */
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.prod .price {
+font-size: 14px;
+color: red; 
+font-weight: bold;
+margin-top: 0px;   /* chỉnh khoảng cách phía trên */
+}.old-price {
+text-decoration: line-through;  /* gạch ngang */
+color: #888;                    /* màu xám */
+font-size: 14px;
+margin-right: 8px;
+margin-top: 0px;   /* chỉnh khoảng cách phía trên */
+}
+
+.new-price {
+color: red;                     /* giá nổi bật */
+font-weight: bold;
+font-size: 16px;
+}.buy-btn {
+  background-color: #7FB23D;   /* màu xanh */
+  color: white;                /* chữ trắng */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 30px;         /* bo tròn */
+  cursor: pointer;
+  display: inline-flex;        /* canh icon + text ngang */
+  align-items: center;
+  justify-content: center;
+  gap: 5px;                    /* khoảng cách giữa icon và chữ */
+  transition: 0.3s;
+  margin: 10px auto 0;         /* căn giữa trong card */
+}
+
+.buy-btn:hover {
+  background-color: #6aa12f;   /* màu xanh đậm hơn khi hover */
+}
+
+.buy-btn i {
+  font-size: 14px;
+}
